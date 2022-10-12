@@ -54,7 +54,7 @@ namespace RestExercise1.Controllers
         {
             try
             {
-                Flower createdFlower = _manager.Add(newIPA);
+                Flower createdFlower = _manager.Add(newFlower);
                 return Created("/" + createdFlower.Id, createdFlower);
             }
             catch (ArgumentOutOfRangeException ex)
